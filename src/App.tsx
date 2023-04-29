@@ -6,18 +6,15 @@ function App() {
   return (
     <Grid
       templateAreas={{
-        // breakpoints
-        base: `"nav" "main"`, // devices not wider than 1024 px (mobile, tabs)
-        lg: `"nav nav" "aside main"`, // devices wider than 1024 px (desktop)
+        base: `"nav" "main"`,
+        lg: `"nav nav" "aside main"`,
       }}
     >
       <GridItem area="nav">
         <NavBar />
       </GridItem>
       <Show above="lg">
-        <GridItem area="aside">
-          Aside
-        </GridItem>
+        <GridItem area="aside">Aside</GridItem>
       </Show>
       <GridItem area="main">
         <GameGrid />
