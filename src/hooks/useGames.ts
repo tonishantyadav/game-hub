@@ -1,4 +1,5 @@
 import useData from "./useData";
+import { Genre } from "./useGenres";
 
 export interface Platfrom {
   id: number;
@@ -14,8 +15,14 @@ export interface Game {
   metacritic: number;
 }
 
-const useGames = () => {
-  const { data, error, isLoading } = useData<Game>("/games");
+const useGames = (selectedGenre: Genre | null) => {
+  const { data, error, isLoading } = useData<Game>(
+    "/games",
+    {
+      params: { genres: selectedGenre?.id }, // pass the genre as a query string to rawg api
+    },
+    [selectedGenre?.id]
+  );
   return { games: data, error, isLoading };
 };
 
