@@ -8,7 +8,7 @@ const GenreListSkeleton = () => {
   return (
     <VStack spacing={2} align="stretch">
       {skeletons.map((skeleton) => (
-        <Skeleton height="30px" key={skeleton} />
+        <Skeleton height="30px" key={skeleton} borderRadius="5px"/>
       ))}
     </VStack>
   );
