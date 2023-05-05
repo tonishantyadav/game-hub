@@ -6,7 +6,7 @@ import GameCardContainer from "./GameCardContainer";
 import GameCard from "./GameCard";
 
 interface Props {
-  gameQuery: GameQuery
+  gameQuery: GameQuery;
 }
 
 const GameGrid = ({ gameQuery }: Props) => {
