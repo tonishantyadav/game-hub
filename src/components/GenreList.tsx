@@ -16,11 +16,13 @@ interface Props {
 }
 
 const GenreList = ({ selectedGenre, onSelectGenre }: Props) => {
-  const { genres, isLoading } = useGenres();
+  const { data: genres, isLoading } = useGenres();
 
   return (
     <>
-      <Heading fontSize="2xl" marginBottom={3}>Genres</Heading>
+      <Heading fontSize="2xl" marginBottom={3}>
+        Genres
+      </Heading>
       <List>
         {isLoading && <GenreListSkeleton />}
         {genres.map((genre) => (
