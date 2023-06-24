@@ -14,7 +14,7 @@ const Emoji = ({ rating }: Props) => {
     5: { src: bullsEye, alt: "exceptional", boxSize: "35px" },
   };
 
-  return <Image {...emojiMap[rating]} marginTop={2}/>;
+  return <Image {...emojiMap[rating]} marginTop={2} />;
 };
 
 export default Emoji;
