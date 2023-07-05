@@ -26,7 +26,7 @@ const ExpandableText = ({ children }: Props) => {
         marginLeft={1}
         onClick={() => setExpanded(!expanded)}
       >
-        Show more
+        {expanded ? "Show Less" : "Show More"}
       </Button>
     </Text>
   );
