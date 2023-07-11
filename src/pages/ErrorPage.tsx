@@ -6,7 +6,6 @@ const ErrorPage = () => {
   const error = useRouteError();
   return (
     <>
-    <Heading>Error...</Heading>
       <NavBar />
       <Box padding={5}>
         <Heading>Oops</Heading>
