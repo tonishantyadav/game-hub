@@ -32,6 +32,3 @@ Start the server
 ```bash
   npm run dev
 ```
-## Contact
-For any questions or feedback, please contact me at inishantyadav24@gmail.com. I hope you find GameHub useful for discovering new games. Happy coding!
-
